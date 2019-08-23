@@ -1,0 +1,5 @@
+<div>{{ timerDisplay?.hours?.digit1 }}{{ timerDisplay?.hours?.digit2 }}:{{ timerDisplay?.minutes?.digit1 }}{{ timerDisplay?.minutes?.digit2
+  }}:{{ timerDisplay?.seconds?.digit1 }}{{ timerDisplay?.seconds?.digit2 }}</div>
+<button *ngIf="isRunning" (click)="toggleTimer()">Stop</button>
+<button *ngIf="!isRunning" (click)="toggleTimer()">Start</button>
+<button (click)="resetWatch()">Reset</button>
